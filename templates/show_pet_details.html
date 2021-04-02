@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}{{pet.name}}{% endblock %}
+{% block content %}
+<form action="..">
+    <button class="back-button">Back to Home</button>
+</form>
+<div class="pet-details-container">
+    <h1>Meet {{pet.name}}!</h1>
+    <ul>
+        <li>Age: {{pet.age}}</li>
+        <li>Species: {{pet.species}}</li>
+        <li>Special notes from the seller: {{pet.notes}}</li>
+    </ul>
+
+    <h2>What is {{pet.name}}'s story?</h2>
+</div>
+{% include 'pet_form.html' %}
+<link rel="stylesheet" href="../static/show_pet_details.css">
+{% endblock %}

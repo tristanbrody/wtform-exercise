@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Browse Pets!{% endblock %}
+
+{% block content %}
+<div class="pet-container">
+    {% for pet in pets %}
+    <div class="individual-pet-container">
+        <a href="./pets/{{pet.id}}"><img src="{{pet.photo_url}}" alt="Image of {{pet.name}}"></a>
+        {% if pet.available %}
+        <p><a href="./pets/{{pet.id}}">{{pet.name}}<strong> is available!</strong></a></p>
+        {% else %}
+        Uh oh, {{pet.name}} is reserved by another customer. <a href="/pets/{{pet.id}}">Make a counter offer!</a>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+</ul>
+<div class="container">
+    <form action="/add" , method="GET">
+        <button class="add-btn">Add Your Pet</button>
+    </form>
+</div>
+
+{% endblock %}

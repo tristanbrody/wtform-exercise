@@ -1,0 +1,101 @@
+body {
+	font-family: 'EB Garamond', serif;
+}
+
+.add-btn {
+	font-size: 1.1em;
+	padding: 10px 16px;
+	font-weight: 600;
+	cursor: pointer;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #ffffff;
+	background: #14b64a;
+	border: 2px solid #0fa942;
+	outline: none;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.add-btn--cancel {
+	background: red;
+	border: 2px solid red;
+	padding: 10px 8px;
+	margin-right: 5px;
+}
+
+.add-btn:hover {
+	background: #10ad44;
+}
+
+.add-btn--cancel:hover {
+	background: #ff3333;
+}
+
+.add-pet-form--item {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.5;
+}
+
+input {
+	height: 27px;
+	width: 400px;
+	border: 1px solid #dddddd;
+}
+
+input:focus {
+	border-color: #a9a9a9;
+}
+
+input[type='checkbox'] {
+	align-self: flex-start;
+	width: 25px;
+}
+
+label {
+	padding: 10px 0;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.fa-dollar-sign {
+	position: absolute;
+	bottom: 6.2px;
+	left: 3.5px;
+}
+
+i + input {
+	text-indent: 11px;
+}
+
+.input-wrapper {
+	position: relative;
+}
+
+img {
+	width: 150px;
+	height: 200px;
+	margin: 0 10px;
+}
+
+.pet-container {
+	display: flex;
+	justify-content: center;
+}
+
+.individual-pet-container {
+	display: inline-flex;
+	flex-direction: column;
+}
+
+p {
+	text-align: center;
+	padding: 0;
+}
+
+.hidden {
+	display: none;
+}
